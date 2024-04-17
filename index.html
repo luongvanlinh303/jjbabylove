@@ -94,6 +94,11 @@
     <script src="script.js"></script>
     <script>
       document.getElementById("myAudio").style.display = "none";
+      var audio = document.getElementById("myAudio");
+      audio.addEventListener("ended", function () {
+        this.currentTime = 0;
+        this.play();
+      });
     </script>
   </body>
 </html>
