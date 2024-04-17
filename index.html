@@ -96,9 +96,15 @@
     <script>
       document.getElementById("myAudio").style.display = "none";
 
-      document.addEventListener("load", function () {
+      window.addEventListener("load", function () {
         var audio = document.getElementById("myAudio");
         audio.play();
+      });
+
+      // Thêm sự kiện để tải lại nhạc trước mỗi lần phát
+      document.getElementById("myAudio").addEventListener("ended", function () {
+        this.load();
+        this.play();
       });
     </script>
   </body>
