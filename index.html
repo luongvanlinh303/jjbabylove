@@ -9,8 +9,6 @@
   </head>
 
   <body>
-    <!-- end chest -->
-
     <div class="c content">
       MY BABY LOVE YOU SO MUCH FOREVER YOU AND I !!! I LOVE YOU OH I LOVE YOU SO
       MUCH FOREVER YOU AND I <span><p>&#128525;</p></span> ANH YÊU EM JJ CỦA ANH
@@ -18,7 +16,6 @@
     </div>
 
     <div id="heart" hidden>
-      <!-- effects -->
       <div class="spark spark-1">
         <svg viewBox="0 0 32 29.6" width="80px" fill="#f29dc6">
           <path
@@ -85,7 +82,8 @@
       <div class="dust dust-5 white"></div>
       <div class="dust dust-6 yellow"></div>
     </div>
-    <video id="myAudio" controls autoplay src="babilove.mp4"></video>
+    <audio id="myAudio" controls autoplay src="babilove.mp3"></audio>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -101,7 +99,6 @@
         audio.play();
       });
 
-      // Thêm sự kiện để tải lại nhạc trước mỗi lần phát
       document.getElementById("myAudio").addEventListener("ended", function () {
         this.load();
         this.play();
@@ -109,7 +106,6 @@
 
       document.addEventListener("click", function (event) {
         var audio = document.getElementById("myAudio");
-        // Phát nhạc khi click vào bất kỳ vị trí nào trên màn hình
         audio.play();
       });
     </script>
